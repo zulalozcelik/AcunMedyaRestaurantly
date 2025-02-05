@@ -1,4 +1,5 @@
 ﻿using AcunMedyaRestaurantly.Context;
+using AcunMedyaRestaurantly.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,41 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = Db.Categories.ToList();
             return View(value);
         }
+    
+        public ActionResult CategoryList()
+        {
+
+            var value = Db.Categories.ToList();
+            return View(value);
+        }
+        [HttpGet]
+        public ActionResult CategoryCreate()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult CategoryCreate(Category model)
+        {
+            Db.Categories.Add(model);
+            Db.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
+
+        [HttpGet]
+        public ActionResult CategoryEdit(int id)
+        {
+            var value = Db.Categories.Find(id);
+            return View(value);
+        }
+
+        [HttpPost]
+        public ActionResult CategoryEdit(Category model)
+        {
+            var values = Db.Categories.Find(model.CategoryId);
+            values.CategoryName = model.CategoryName;
+            Db.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
+
     }
 }
