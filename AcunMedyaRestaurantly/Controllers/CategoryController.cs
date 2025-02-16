@@ -52,6 +52,13 @@ namespace AcunMedyaRestaurantly.Controllers
             Db.SaveChanges();
             return RedirectToAction("CategoryList");
         }
+        public ActionResult CategoryDelete(int id)
+        {
+            var value = Db.Categories.Find(id);
+            Db.Categories.Remove(value);
+            Db.SaveChanges();
+            return RedirectToAction("CategoryList");
+        }
 
     }
 }
