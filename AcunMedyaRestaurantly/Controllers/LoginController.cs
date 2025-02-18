@@ -20,16 +20,16 @@ namespace AcunMedyaRestaurantly.Controllers
             return View();
         }
         [HttpPost]
-        //public ActionResult Index(Admin p)
-        //{
-        //    var values = Db.Admin.FirstOrDefault(x => x.UserName == p.UserName && x.Password == p.Password);
-        //    if (values != null)
-        //    {
-        //        FormsAuthentication.SetAuthCookie(values.UserName, true);
-        //        Session["a"] = values.UserName;
-        //        return RedirectToAction("ProductList", "Product");
-        //    }
-        //    return View();
+        public ActionResult Index(Admin p)
+        {
+            var values = Db.Admins.FirstOrDefault(x => x.UserName == p.UserName && x.Password == p.Password);
+            if (values != null)
+            {
+                FormsAuthentication.SetAuthCookie(values.UserName, true);
+                Session["a"] = values.UserName;
+                return RedirectToAction("ProductList", "Product");
+            }
+            return View();
         }
     }
 }

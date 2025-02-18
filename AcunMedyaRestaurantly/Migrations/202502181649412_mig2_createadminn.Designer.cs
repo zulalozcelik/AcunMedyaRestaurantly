@@ -7,13 +7,13 @@ namespace AcunMedyaRestaurantly.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class mig2createadmin : IMigrationMetadata
+    public sealed partial class mig2_createadminn : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(mig2createadmin));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(mig2_createadminn));
         
         string IMigrationMetadata.Id
         {
-            get { return "202502051913166_mig2createadmin"; }
+            get { return "202502181649412_mig2_createadminn"; }
         }
         
         string IMigrationMetadata.Source

@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class mig2createadmin : DbMigration
+    public partial class mig_adm : DbMigration
     {
         public override void Up()
         {

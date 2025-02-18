@@ -155,9 +155,9 @@
     <Compile Include="Migrations\202502041039282_mig1categoryproductrelation.Designer.cs">
       <DependentUpon>202502041039282_mig1categoryproductrelation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202502051913166_mig2createadmin.cs" />
-    <Compile Include="Migrations\202502051913166_mig2createadmin.Designer.cs">
-      <DependentUpon>202502051913166_mig2createadmin.cs</DependentUpon>
+    <Compile Include="Migrations\202502181649412_mig2_createadminn.cs" />
+    <Compile Include="Migrations\202502181649412_mig2_createadminn.Designer.cs">
+      <DependentUpon>202502181649412_mig2_createadminn.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -5578,12 +5578,13 @@
     <Content Include="Views\Product\ProductList.cshtml" />
     <Content Include="Views\Product\ProductCreate.cshtml" />
     <Content Include="Views\Product\ProductEdit.cshtml" />
+    <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Dashboard\ReservasionPartial.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Dashboard\" />
-    <Folder Include="Views\Login\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -5616,8 +5617,8 @@
     <EmbeddedResource Include="Migrations\202502041039282_mig1categoryproductrelation.resx">
       <DependentUpon>202502041039282_mig1categoryproductrelation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202502051913166_mig2createadmin.resx">
-      <DependentUpon>202502051913166_mig2createadmin.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202502181649412_mig2_createadminn.resx">
+      <DependentUpon>202502181649412_mig2_createadminn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
