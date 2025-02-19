@@ -19,6 +19,7 @@ namespace AcunMedyaRestaurantly.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
+            //var values = Db.Notifications.Where
             return PartialView();
         }
         public PartialViewResult PartialSidebar()
