@@ -3,6 +3,7 @@
     Layout = null;
 }
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,7 +38,7 @@
                     <b class="logo-abbr"><img src="images/logo.png" alt=""> </b>
                     <span class="logo-compact"><img src="~/Template/quixlab-master/images/logo-compact.png" alt=""></span>
                     <span class="brand-title">
-                        <img src="~/Template/quixlab-master/images/logo-text.png" alt="">
+                        <img src="images/logo-text.png" alt="">
                     </span>
                 </a>
             </div>
@@ -49,7 +50,6 @@
             Header start
         ***********************************-->
         @Html.Action("PartialNavbar", "AdminLayout")
-
         <!--**********************************
             Header end ti-comment-alt
         ***********************************-->
@@ -57,7 +57,6 @@
             Sidebar start
         ***********************************-->
         @Html.Action("PartialSidebar", "AdminLayout")
-
         <!--**********************************
             Sidebar end
         ***********************************-->
@@ -65,8 +64,7 @@
             Content body start
         ***********************************-->
         <div class="content-body">
-
-            @RenderBody()
+        @RenderBody()
         </div>
         <!--**********************************
             Content body end
@@ -75,7 +73,6 @@
             Footer start
         ***********************************-->
         @Html.Action("PartialFooter", "AdminLayout")
-
         <!--**********************************
             Footer end
         ***********************************-->
@@ -87,8 +84,6 @@
         Scripts
     ***********************************-->
     @Html.Action("PartialScript", "AdminLayout")
-
-
 </body>
 
 </html>

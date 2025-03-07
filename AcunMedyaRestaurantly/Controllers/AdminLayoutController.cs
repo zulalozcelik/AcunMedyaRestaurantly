@@ -10,6 +10,7 @@ namespace AcunMedyaRestaurantly.Controllers
     public class AdminLayoutController : Controller
     {
         RestaurantlyContext Db = new RestaurantlyContext();
+
         // GET: AdminLayout
         public ActionResult Index()
         {
@@ -23,7 +24,7 @@ namespace AcunMedyaRestaurantly.Controllers
         {
             ViewBag.notificationIsreadByfalseCount = Db.Notifications.Where(x => x.IsRead == "False").Count();
             var values = Db.Notifications.Where(x => x.IsRead == "False").ToList();
-            return PartialView();
+            return PartialView(values);
         }
         public PartialViewResult PartialSidebar()
         {

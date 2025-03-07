@@ -15,11 +15,16 @@ namespace AcunMedyaRestaurantly.Controllers
         // GET: Product
 
 
-        public ActionResult ProductList()
+        public ActionResult ProductList(string searcText)
         {
-
+            List<Product> values;
+            if (searcText != null)
+            {
+                values = Db.Products.Where(x => x.Name.Contains(searcText)).ToList();
+                return View(values);
+            }
             var value = Db.Products.ToList();
-            ViewBag.username = Session["a"];
+            //ViewBag.username = Session["a"];
             return View(value);
         }
         [HttpGet]
@@ -36,7 +41,7 @@ namespace AcunMedyaRestaurantly.Controllers
         }
         [HttpPost]
         public ActionResult ProductCreate(Product model)
-        {
+        { 
             Db.Products.Add(model);
             Db.SaveChanges();
             return RedirectToAction("ProductList");
