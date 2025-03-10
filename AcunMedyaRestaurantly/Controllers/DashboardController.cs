@@ -15,10 +15,14 @@ namespace AcunMedyaRestaurantly.Controllers
         // GET: Dahboard
         public ActionResult Index()
         {
-            ViewBag.Productcount = Db.Products.Count();
+            ViewBag.ProductCount = Db.Products.Count();
             ViewBag.CategoryCount = Db.Categories.Count();
-            ViewBag.Chefcount = Db.Chefs.Count();
-            ViewBag.SpecialCount = Db.Contacts.Count();
+            ViewBag.ChefCount = Db.Chefs.Count();
+            ViewBag.SpecialCount = Db.Specials.Count();
+            //ViewBag.MessageCount = Db.Contacts.Count();
+            //ViewBag.NotificationCount = Db.Notifications.Count();
+            //ViewBag.ReservationCount = Db.Reservations.Count();
+            //ViewBag.TestimonialCount = Db.Testimonials.Count();
             return View();
         }
         public PartialViewResult ReservasionPartial()

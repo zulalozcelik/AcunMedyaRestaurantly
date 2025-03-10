@@ -27,7 +27,13 @@ namespace AcunMedyaRestaurantly.Controllers
             {
                 FormsAuthentication.SetAuthCookie(values.UserName, true);
                 Session["a"] = values.UserName;
-                return RedirectToAction("ProductList", "Product");
+                Session["id"] = values.AdminId;
+                Session["surname"] = values.SurName;
+                Session["name"] = values.Name;
+                Session["img"] = values.ImageUrl;
+                Session["Email"] = values.Email.ToString();
+                Session["Password"] = values.Password.ToString();
+                return RedirectToAction("Index", "Profiles");
             }
             return View();
         }
