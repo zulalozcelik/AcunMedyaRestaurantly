@@ -133,17 +133,26 @@
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
+    <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
+    <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\SpecialController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Admin.cs" />
     <Compile Include="Entities\Adress.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Chef.cs" />
     <Compile Include="Entities\Contact.cs" />
+    <Compile Include="Entities\Event.cs" />
     <Compile Include="Entities\Feature.cs" />
+    <Compile Include="Entities\Gallery.cs" />
     <Compile Include="Entities\Notification.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Reservation.cs" />
@@ -168,6 +177,10 @@
     <Compile Include="Migrations\202503100818386_mig3.cs" />
     <Compile Include="Migrations\202503100818386_mig3.Designer.cs">
       <DependentUpon>202503100818386_mig3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202503141329238_migAddingGalleryEvent.cs" />
+    <Compile Include="Migrations\202503141329238_migAddingGalleryEvent.Designer.cs">
+      <DependentUpon>202503141329238_migAddingGalleryEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -5703,6 +5716,13 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
+    <Folder Include="Views\Event\" />
+    <Folder Include="Views\Gallery\" />
+    <Folder Include="Views\Notification\" />
+    <Folder Include="Views\Reservation\" />
+    <Folder Include="Views\Special\" />
+    <Folder Include="Views\Statistic\" />
+    <Folder Include="Views\Testimonial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -5743,6 +5763,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202503100818386_mig3.resx">
       <DependentUpon>202503100818386_mig3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202503141329238_migAddingGalleryEvent.resx">
+      <DependentUpon>202503141329238_migAddingGalleryEvent.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
