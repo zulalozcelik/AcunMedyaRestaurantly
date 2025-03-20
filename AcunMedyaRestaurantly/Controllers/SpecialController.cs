@@ -48,7 +48,7 @@ namespace AcunMedyaRestaurantly.Controllers
             value.Title = model.Title;
             value.ShortDescription = model.ShortDescription;
             value.FullDescription = model.FullDescription;
-            value.imageUrl = model.imageUrl;
+            value.ImageUrl = model.ImageUrl;
             Db.SaveChanges();
             return RedirectToAction("SpecialList");
         }

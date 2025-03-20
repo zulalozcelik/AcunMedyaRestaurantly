@@ -47,7 +47,6 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = Db.Events.Find(model.EventId);
             value.Title = model.Title;
             value.Price = model.Price;
-            value.Description4 = model.Description4;
             value.Description1 = model.Description1;
             value.Description2 = model.Description2;
             value.Description3 = model.Description3;

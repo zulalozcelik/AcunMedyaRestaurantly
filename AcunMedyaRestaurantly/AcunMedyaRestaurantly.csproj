@@ -5712,13 +5712,17 @@
     <Content Include="Template\Login_v1\vendor\bootstrap\css\bootstrap.min.css.map" />
     <Content Include="Views\Profiles\Index.cshtml" />
     <Content Include="Views\Profiles\ChangePassword.cshtml" />
+    <Content Include="Views\Event\EventList.cshtml" />
+    <Content Include="Views\Event\EventCreate.cshtml" />
+    <Content Include="Views\Event\EventEdit.cshtml" />
+    <Content Include="Views\Gallery\GalleryList.cshtml" />
+    <Content Include="Views\Gallery\GalleryCreate.cshtml" />
+    <Content Include="Views\Gallery\GalleryEdit.cshtml" />
+    <Content Include="Views\Notification\NotificationList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
-    <Folder Include="Views\Event\" />
-    <Folder Include="Views\Gallery\" />
-    <Folder Include="Views\Notification\" />
     <Folder Include="Views\Reservation\" />
     <Folder Include="Views\Special\" />
     <Folder Include="Views\Statistic\" />
