@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace AcunMedyaRestaurantly.Controllers
 {
+    [Authorize]
     public class DashboardController : Controller
     {
         RestaurantlyContext Db = new RestaurantlyContext();
@@ -18,10 +19,10 @@ namespace AcunMedyaRestaurantly.Controllers
             ViewBag.CategoryCount = Db.Categories.Count();
             ViewBag.ChefCount = Db.Chefs.Count();
             ViewBag.SpecialCount = Db.Specials.Count();
-            //ViewBag.MessageCount = Db.Contacts.Count();
-            //ViewBag.NotificationCount = Db.Notifications.Count();
-            //ViewBag.ReservationCount = Db.Reservations.Count();
-            //ViewBag.TestimonialCount = Db.Testimonials.Count();
+            ViewBag.MessageCount = Db.Contacts.Count();
+            ViewBag.NotificationCount = Db.Notifications.Count();
+            ViewBag.ReservationCount = Db.Reservations.Count();
+            ViewBag.TestimonialCount = Db.Testimonials.Count();
             return View();
         }
         public PartialViewResult ReservasionPartial()

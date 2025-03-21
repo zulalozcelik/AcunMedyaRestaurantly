@@ -128,12 +128,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\RestaurantlyContext.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\AdressController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ChefController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\ErrorPageController.cs" />
     <Compile Include="Controllers\EventController.cs" />
+    <Compile Include="Controllers\FeatureController.cs" />
     <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
@@ -141,6 +146,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ProfilesController.cs" />
     <Compile Include="Controllers\ReservationController.cs" />
+    <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\SpecialController.cs" />
     <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Controllers\TestimonialController.cs" />
@@ -5719,14 +5725,36 @@
     <Content Include="Views\Gallery\GalleryCreate.cshtml" />
     <Content Include="Views\Gallery\GalleryEdit.cshtml" />
     <Content Include="Views\Notification\NotificationList.cshtml" />
+    <Content Include="Views\About\AboutList.cshtml" />
+    <Content Include="Views\About\AboutCreate.cshtml" />
+    <Content Include="Views\About\AboutEdit.cshtml" />
+    <Content Include="Views\Adress\AdressList.cshtml" />
+    <Content Include="Views\Adress\AdressCreate.cshtml" />
+    <Content Include="Views\Adress\AdressEdit.cshtml" />
+    <Content Include="Views\Chef\ChefList.cshtml" />
+    <Content Include="Views\Chef\ChefCreate.cshtml" />
+    <Content Include="Views\Chef\ChefEdit.cshtml" />
+    <Content Include="Views\Contact\ContactList.cshtml" />
+    <Content Include="Views\Feature\FeatureList.cshtml" />
+    <Content Include="Views\Feature\FeatureEdit.cshtml" />
+    <Content Include="Views\Feature\FeatureCreate.cshtml" />
+    <Content Include="Views\Reservation\ReservationList.cshtml" />
+    <Content Include="Views\Reservation\ReservationCreate.cshtml" />
+    <Content Include="Views\Reservation\ReservationEdit.cshtml" />
+    <Content Include="Views\Service\ServiceList.cshtml" />
+    <Content Include="Views\Service\ServiceCreate.cshtml" />
+    <Content Include="Views\Service\ServiceEdit.cshtml" />
+    <Content Include="Views\Special\SpecialList.cshtml" />
+    <Content Include="Views\Special\SpecialCreate.cshtml" />
+    <Content Include="Views\Special\SpecialEdit.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialList.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialCreate.cshtml" />
+    <Content Include="Views\Testimonial\TestimonialEdit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="images\" />
-    <Folder Include="Views\Reservation\" />
-    <Folder Include="Views\Special\" />
-    <Folder Include="Views\Statistic\" />
-    <Folder Include="Views\Testimonial\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
