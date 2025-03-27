@@ -5751,6 +5751,9 @@
     <Content Include="Views\Testimonial\TestimonialList.cshtml" />
     <Content Include="Views\Testimonial\TestimonialCreate.cshtml" />
     <Content Include="Views\Testimonial\TestimonialEdit.cshtml" />
+    <Content Include="Views\Default\PartialFooter.cshtml" />
+    <Content Include="Views\Default\PartialEvent.cshtml" />
+    <Content Include="Views\Default\PartialGallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
