@@ -22,8 +22,8 @@ namespace AcunMedyaRestaurantly.Controllers
         }
         public PartialViewResult PartialNavbar()
         {
-            ViewBag.notificationIsreadByfalseCount = Db.Notifications.Where(x => x.IsRead == "False").Count();
-            var values = Db.Notifications.Where(x => x.IsRead == "False").ToList();
+            ViewBag.notificationIsreadByfalseCount = Db.Notifications.Where(x => x.IsRead == "false").Count();
+            var values = Db.Notifications.Where(x => x.IsRead == "false").ToList();
             return PartialView(values);
         }
         public PartialViewResult PartialSidebar()
@@ -41,7 +41,7 @@ namespace AcunMedyaRestaurantly.Controllers
         public ActionResult NotificationStatusChangeToTrue(int id)
         {
             var value = Db.Notifications.Find(id);
-            value.IsRead = "True";
+            value.IsRead = "true";
             Db.SaveChanges();
             return RedirectToAction("ProductList", "Product");
         }

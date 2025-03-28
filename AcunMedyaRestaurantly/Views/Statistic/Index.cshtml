@@ -6,69 +6,158 @@
 
 <div class="container-fluid mt-3">
     <div class="row">
+        <!-- Admin Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-1">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Kategori Sayısı</h3>
+                    <h3 class="card-title text-white">Admin Sayısı</h3>
                     <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.CategoryCount</h2>
-                        <p class="text-white mb-0">Kategoriler</p>
+                        <h2 class="text-white">@ViewBag.AdminCount</h2>
+                        <p class="text-white mb-0">Adminler</p>
                     </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                    <!-- Font Awesome 4.7 ikonu -->
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-user-secret"></i>
+                    </span>
                 </div>
             </div>
         </div>
+
+        <!-- Bildirim Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-2">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Şef Sayısı</h3>
+                    <h3 class="card-title text-white">Bildirim Sayısı</h3>
                     <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.ChefCount</h2>
-                        <p class="text-white mb-0">Şefler</p>
+                        <h2 class="text-white">@ViewBag.NotificationCount</h2>
+                        <p class="text-white mb-0">Bildirimler</p>
                     </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-bell"></i>
+                    </span>
                 </div>
             </div>
         </div>
+
+        <!-- Mesaj Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-3">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Etkinlik Sayısı</h3>
+                    <h3 class="card-title text-white">Mesaj Sayısı</h3>
                     <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.EventCount</h2>
-                        <p class="text-white mb-0">Etkinlikler</p>
+                        <h2 class="text-white">@ViewBag.MessageCount</h2>
+                        <p class="text-white mb-0">Mesajlar</p>
                     </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-envelope"></i>
+                    </span>
                 </div>
             </div>
         </div>
+
+        <!-- Referans Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-4">
                 <div class="card-body">
-                    <h3 class="card-title text-white">Fotoğraf Sayısı</h3>
+                    <h3 class="card-title text-white">Referans Sayısı</h3>
                     <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.GalleryCount</h2>
-                        <p class="text-white mb-0">Fotoğraflar</p>
+                        <h2 class="text-white">@ViewBag.TestimonialCount</h2>
+                        <p class="text-white mb-0">Referanslar</p>
                     </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-comments"></i>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="row">
+        <!-- Kategori Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-5">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Kategori Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.CategoryCount</h2>
+                        <p class="text-white mb-0">Kategoriler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-list"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Şef Sayısı -->
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-6">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Şef Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.ChefCount</h2>
+                        <p class="text-white mb-0">Şefler</p>
+                    </div>
+                    <!-- Eski sürümlerde 'fa-utensils' yok; yerine 'fa-user' veya 'fa-cutlery' -->
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-user"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Etkinlik Sayısı -->
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-7">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Etkinlik Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.EventCount</h2>
+                        <p class="text-white mb-0">Etkinlikler</p>
+                    </div>
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-calendar"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fotoğraf Sayısı -->
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-8">
+                <div class="card-body">
+                    <h3 class="card-title text-white">Fotoğraf Sayısı</h3>
+                    <div class="d-inline-block">
+                        <h2 class="text-white">@ViewBag.GalleryCount</h2>
+                        <p class="text-white mb-0">Fotoğraflar</p>
+                    </div>
+                    <!-- 'fa-image' yoksa FA4.7’de 'fa-picture-o' kullanılabilir -->
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-picture-o"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Yemek Sayısı -->
+        <div class="col-lg-3 col-sm-6">
+            <div class="card gradient-9">
                 <div class="card-body">
                     <h3 class="card-title text-white">Yemek Sayısı</h3>
                     <div class="d-inline-block">
                         <h2 class="text-white">@ViewBag.ProductCount</h2>
                         <p class="text-white mb-0">Ürünler</p>
                     </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                    <!-- 'fa-hamburger' yoksa FA4.7’de 'fa-cutlery' kullanılabilir -->
+                    <span class="float-right display-5 opacity-5">
+                        <i class="fa fa-cutlery"></i>
+                    </span>
                 </div>
             </div>
         </div>
+        <!-- Rezervasyon Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-6">
                 <div class="card-body">
@@ -81,6 +170,7 @@
                 </div>
             </div>
         </div>
+        <!-- Hizmet Sayısı -->    
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-7">
                 <div class="card-body">
@@ -93,6 +183,7 @@
                 </div>
             </div>
         </div>
+        <!-- Spesiyal Sayısı -->
         <div class="col-lg-3 col-sm-6">
             <div class="card gradient-8">
                 <div class="card-body">
@@ -106,55 +197,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-lg-3 col-sm-6">
-            <div class="card gradient-9">
-                <div class="card-body">
-                    <h3 class="card-title text-white">Referans Sayısı</h3>
-                    <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.TestimonialCount</h2>
-                        <p class="text-white mb-0">Referanslar</p>
-                    </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="card gradient-0">
-                <div class="card-body">
-                    <h3 class="card-title text-white">Mesaj Sayısı</h3>
-                    <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.MessageCount</h2>
-                        <p class="text-white mb-0">Mesajlar</p>
-                    </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="card gradient-1">
-                <div class="card-body">
-                    <h3 class="card-title text-white">Bildirim Sayısı</h3>
-                    <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.NotificationCount</h2>
-                        <p class="text-white mb-0">Bildirimler</p>
-                    </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-sm-6">
-            <div class="card gradient-2">
-                <div class="card-body">
-                    <h3 class="card-title text-white">Admin Sayısı</h3>
-                    <div class="d-inline-block">
-                        <h2 class="text-white">@ViewBag.AdminCount</h2>
-                        <p class="text-white mb-0">Adminler</p>
-                    </div>
-                    <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
+
+

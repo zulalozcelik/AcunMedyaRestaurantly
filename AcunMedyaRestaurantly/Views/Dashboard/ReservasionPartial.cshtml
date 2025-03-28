@@ -1,53 +1,53 @@
 ﻿﻿﻿@model List<AcunMedyaRestaurantly.Entities.Reservation>
-<div class="col-lg-12">
-    <div class="card">
-        <div class="card-body">
-            <div class="active-member">
-                <div class="table-responsive">
-                    <table class="table table-xs mb-0">
-                        <thead>
-                            <tr>
-                                <th>Müşteri ismi</th>
-                                <th>Mail</th>
-                                <th>Telefon</th>
-                                <th>Açıklaması</th>
-                                <th>Durumu</th>
-                                <th>Detaylar</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var item in Model)
-                            {
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Rezervasyonlar</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
                                 <tr>
-                                    <td>@item.Name</td>
-                                    <td>@item.Email/td>
-                                    <td>
-                                        <span>@item.Phone</span>
-                                    </td>
-                                    <td>@item.Description</td>
-
-                                    @if (item.ReservationStatus == "Beklemede")
-                                    {
-                                        <td><i class="fa fa-circle-o text-info  mr-2"></i> Beklemede</td>
-                                    }
-                                    @if (item.ReservationStatus == "Onaylandı")
-                                    {
-                                        <td><i class="fa fa-circle-o text-success  mr-2"></i> Onaylandı</td>
-                                    }
-                                    @if (item.ReservationStatus == "İptal Edildi")
-                                    {
-                                        <td><i class="fa fa-circle-o text-danger  mr-2"></i> Reddedildi</td>
-                                    }
-
-                                    <td>
-                                        <a class="btn btn-outline-info">Detaylar</a>
-                                    </td>
+                                    <th>Ad - Soyad</th>
+                                    <th>E-Posta</th>
+                                    <th>Telefon</th>
+                                    <th>Tarih</th>
+                                    <th>Kişi Sayısı</th>
+                                    <th>Rezervasyon Durumu</th>
                                 </tr>
-                            }
-
-
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Name</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.Phone</td>
+                                        <td>@item.ReservationDate</td>
+                                        <td>@item.GuestCount</td>
+                                        <td>
+                                            @if (item.ReservationStatus == "Onay Bekliyor")
+                                            {
+                                                <span class="badge badge-warning"><i class="fa fa-circle-o text-warning mr-2"></i> Onay Bekliyor</span>
+                                            }
+                                            else if (item.ReservationStatus == "Onaylandı")
+                                            {
+                                                <span class="badge badge-success"><i class="fa fa-circle-o text-success mr-2"></i> Onaylandı</span>
+                                            }
+                                            else if (item.ReservationStatus == "İptal Edildi")
+                                            {
+                                                <span class="badge badge-danger"><i class="fa fa-circle-o text-danger mr-2"></i> Reddedildi</span>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
