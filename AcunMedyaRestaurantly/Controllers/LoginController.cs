@@ -34,7 +34,7 @@ namespace AcunMedyaRestaurantly.Controllers
                 Session["img"] = values.ImageUrl;
                 Session["Email"] = values.Email.ToString();
                 Session["Password"] = values.Password.ToString();
-                return RedirectToAction("Index", "Profiles");
+                return RedirectToAction("Index", "Dashboard");
             }
             return View();
         }
