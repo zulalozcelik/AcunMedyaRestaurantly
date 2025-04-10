@@ -5219,11 +5219,12 @@
     <Content Include="Template\Restaurantly\assets\css\style.css" />
     <Content Include="Template\Restaurantly\assets\img\about-bg.jpg" />
     <Content Include="Template\Restaurantly\assets\img\about.jpg" />
+    <Content Include="Template\Restaurantly\assets\img\aboutneww.png" />
+    <Content Include="Template\Restaurantly\assets\img\AIPICTURE.png" />
     <Content Include="Template\Restaurantly\assets\img\apple-touch-icon.png" />
     <Content Include="Template\Restaurantly\assets\img\chefs\chefs-1.jpg" />
     <Content Include="Template\Restaurantly\assets\img\chefs\chefs-2.jpg" />
     <Content Include="Template\Restaurantly\assets\img\chefs\chefs-3.jpg" />
-    <Content Include="Template\Restaurantly\assets\img\about2.jpeg" />
     <Content Include="Template\Restaurantly\assets\img\event-birthday.jpg" />
     <Content Include="Template\Restaurantly\assets\img\event-custom.jpg" />
     <Content Include="Template\Restaurantly\assets\img\event-private.jpg" />
@@ -5246,6 +5247,7 @@
     <Content Include="Template\Restaurantly\assets\img\menu\mozzarella.jpg" />
     <Content Include="Template\Restaurantly\assets\img\menu\spinach-salad.jpg" />
     <Content Include="Template\Restaurantly\assets\img\menu\tuscan-grilled.jpg" />
+    <Content Include="Template\Restaurantly\assets\img\neww.jpg" />
     <Content Include="Template\Restaurantly\assets\img\specials-1.png" />
     <Content Include="Template\Restaurantly\assets\img\specials-2.png" />
     <Content Include="Template\Restaurantly\assets\img\specials-3.png" />
@@ -5257,6 +5259,7 @@
     <Content Include="Template\Restaurantly\assets\img\testimonials\testimonials-3.jpg" />
     <Content Include="Template\Restaurantly\assets\img\testimonials\testimonials-4.jpg" />
     <Content Include="Template\Restaurantly\assets\img\testimonials\testimonials-5.jpg" />
+    <Content Include="Template\Restaurantly\assets\img\xdfgh.jpg" />
     <Content Include="Template\Restaurantly\assets\js\main.js" />
     <Content Include="Template\Restaurantly\assets\vendor\animate.css\animate.compat.css" />
     <Content Include="Template\Restaurantly\assets\vendor\animate.css\animate.css" />
