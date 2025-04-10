@@ -24,9 +24,14 @@
                             @Html.HiddenFor(x => x.FeatureId)
                             <label>Alt Başlık</label>
                             @Html.TextBoxFor(x => x.SubTitle, new { @class = "form-control" })
+
                             <label>Başlık</label>
                             @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+
                             <label>Video</label>
+                            @Html.TextBoxFor(x => x.VideoUrl, new { @class = "form-control" })
+
+                            <label>Resim</label>
                             @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
                         </div>
 

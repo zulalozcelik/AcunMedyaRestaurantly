@@ -1,5 +1,6 @@
 ﻿using AcunMedyaRestaurantly.Context;
 using AcunMedyaRestaurantly.Entities;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,6 +48,7 @@ namespace AcunMedyaRestaurantly.Controllers
             var value = Db.Features.Find(model.FeatureId);
             value.SubTitle = model.SubTitle;
             value.Title = model.Title;
+            value.VideoUrl = model.VideoUrl;
             value.ImageUrl = model.ImageUrl;
             Db.SaveChanges();
             return RedirectToAction("FeatureList");

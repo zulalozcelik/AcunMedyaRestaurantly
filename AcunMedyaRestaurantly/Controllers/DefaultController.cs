@@ -36,12 +36,15 @@ namespace AcunMedyaRestaurantly.Controllers
         {
             ViewBag.SubTitle = Db.Features.Select(x => x.SubTitle).FirstOrDefault();
             ViewBag.Title = Db.Features.Select(x => x.Title).FirstOrDefault();
-            ViewBag.VideUrl = Db.Features.Select(x => x.VideoUrl).FirstOrDefault();
+            ViewBag.VideoUrl = Db.Features.Select(x => x.VideoUrl).FirstOrDefault();
             return PartialView();
         }
 
         public PartialViewResult PartialAbout()
         {
+            ViewBag.Title = Db.Abouts.Select(x => x.Title).FirstOrDefault();
+            ViewBag.Description = Db.Abouts.Select(x => x.Description).FirstOrDefault();
+            ViewBag.ImageUrl = Db.Abouts.Select(x => x.ImageUrl).FirstOrDefault();
             return PartialView();
         }
         public PartialViewResult PartialService()
