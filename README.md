@@ -90,7 +90,8 @@
 ### Admin Paneli  
 ![Screenshot 2025-04-10 161817](https://github.com/user-attachments/assets/5ceeb507-1a02-4bac-ba94-1ee8f93c9ed4)
 
-![Screenshot 2025-03-28 163545](https://github.com/user-attachments/assets/e70203b1-e7f2-4e4e-a5fe-b103152c32aa)
+![Screenshot 2025-04-11 163246](https://github.com/user-attachments/assets/9ef86bda-8bac-4806-ae0c-c8c251c7257b)
+
 
 ![Screenshot 2025-03-28 163827](https://github.com/user-attachments/assets/fb0847b0-22e8-4ab9-b594-80268345c8a6)
 
